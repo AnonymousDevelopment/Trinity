@@ -39,7 +39,7 @@ botnet = []
 
 
 
-# add a new bot to your botnet by mang0
+# add a new bot to your botnet the edit was done by Mang0
 
 def add_bot(host, user, password):
 
