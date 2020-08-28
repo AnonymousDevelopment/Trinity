@@ -8,13 +8,14 @@ class Bot:
     # Initilize New client 
 
 def __init__(self, host, user, password):
-    self.host = host 
-    self.user = user 
-    self.password = password 
-    self.session = self.ssh()
+    self.host = host
+    self.user = user
+    self.password = password
+    self.ssh()
 
 
-    # secure shell into client 
+
+# secure shell into client 
 
 def ssh(self):
     try:
@@ -55,7 +56,9 @@ botnet=[]
 def add_bot(host, user, password):
     new_bot = Bot(host, user, password)
     botnet.append(new_bot)
-    
+
+ #Add new bot into the network
+
 add_bot('', '', '')
 
 
